@@ -1,0 +1,51 @@
+<hmtl>
+
+    <head>
+        <title>Pokemon REST-API</title>
+        <link rel = "stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div id = "container">
+            <div id = "headerText">
+                <h1>Pokemon REST-API</h1>
+                <h3>Simple API for data fetching from MongoDB</h3>
+                <h4>Examples for HTTP-methods:</h4>
+            </div>
+
+            <div id = infoText>
+                <div class="box"> 
+                    <p><b>GET:</b> one listed item: /api/get/&lt;<i>add id</i>&gt;</p>
+                </div>
+                <h4>Example:</h4>
+                <p>/api/get/5e9c425c2bb02b0a242ea8e8 &lt <b>ObjectId from the MongoDB</b></p>
+                <h4>Result in HTML-page/Console:</h4>
+                <p>{
+                    "type": [
+                        "Poison",
+                        "Grass"
+                    ],
+                    "_id": "5e9c425c2bb02b0a242ea8e8",
+                    "name": "Bulbasaur",
+                    "jname": "フシギダネ",
+                    "weight": 6,
+                    "pokedex": 1
+                }</p>
+                <div class="box">
+                    <p><b>GET:</b> all listings: /api/getAll</p>
+                </div>
+                <div class="box">   
+                    <p><b>POST:</b> add new listing to DB: /api/add</p>
+                </div>
+                <div class="box">
+                    <p><b>PUT:</b> update listed item in the DB: /api/update/&lt;<i>add id</i>&gt</p>
+                </div>
+                <div class="box">
+                    <p><b>DELETE:</b> listing form the DB: /api/delete/&lt;<i>add id</i>&gt</p>
+                </div>
+             </div>
+        </div>
+    </body>
+
+
+</hmtl>

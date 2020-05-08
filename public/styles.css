@@ -1,0 +1,23 @@
+body{
+    color: #333333;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+
+#headerText{
+    text-align: center;
+    margin: 50px 0px 80px 0px;
+}
+
+#infoText{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.box{
+    border: 2px solid;
+    padding: 5px;
+    margin: 30px 0px 30px 0px;
+    border-color: #0496FF;
+    border-radius: 10px;
+}
