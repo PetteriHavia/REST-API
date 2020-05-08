@@ -1,6 +1,4 @@
-const PORT = process.env.PORT || 5000;
-var http = require("http");
-var fs = require("fs");
+const PORT = process.env.PORT;
 var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
