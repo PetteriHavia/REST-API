@@ -1,5 +1,6 @@
 const PORT = process.env.PORT;
 var express = require("express");
+var cors = require("cors");
 var app = express();
 var bodyParser = require("body-parser");
 var mongoose = require ("mongoose");
@@ -11,6 +12,8 @@ app.use(bodyParser.urlencoded({ extended: true}));
 // Express
 app.use(express.static(__dirname + '/public'));
 
+// CORS
+app.use(cors());
 
 // Connect to database
 const password = "m001-mongodb-basics";
