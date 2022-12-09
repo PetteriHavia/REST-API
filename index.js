@@ -16,8 +16,8 @@ app.use(express.static(__dirname + '/public'));
 app.use(cors());
 
 // Connect to database
-const password = "m001-mongodb-basics";
-var uri = "mongodb+srv://m001-student:"+password+"@sandbox-q0ofp.mongodb.net/pokemon";
+const secret = "";
+var uri = "";
 
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
